@@ -17,7 +17,7 @@ class GraphNN(nn.Module):
         self.gnn1 = GCNConv(ninp, ninp * 2)
         self.gnn2 = GCNConv(ninp * 2, ninp)
 
-        self.gnn3 = HypergraphConv(ninp, ninp * 2)
+        #self.gnn3 = HypergraphConv(ninp, ninp * 2)
         self.gnn4 = HypergraphConv(ninp, ninp)
 
         self.dropout = nn.Dropout(dropout)
@@ -33,7 +33,7 @@ class GraphNN(nn.Module):
         heter_graph_edge_type = heter_graph.edge_type.cuda()
         # print (graph_x_embeddings.shape)
         heter_graph_x_embeddings = self.gnn1(self.embedding.weight, heter_graph_edge_index)
-        heter_graph_x_embeddings = self.dropout(heter_graph_x_embeddings)
+        #heter_graph_x_embeddings = self.dropout(heter_graph_x_embeddings)
         heter_graph_output = self.gnn2(heter_graph_x_embeddings, heter_graph_edge_index)
 
         hyper_graph_edge_index = hyper_graph.edge_index.cuda()
