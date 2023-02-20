@@ -3,27 +3,47 @@ source code for paper "GRASS: Learning Spatial-Temporal Properties from Chain-li
 
 ### Description
 
-The code of this project is improved based on the following two articles. 
+
+
+We provide the checkpoints and result files. 
+
+For validation, please input:
+
+```
+python run.py --data=memetracker --save_path=./checkpoints/GRASS_memetracker.pt
+```
+
+
+
+
+
+The code of this project is developed based on the following two articles. 
 
 ```
 
-@inproceedings{DBLP:conf/pkdd/YuanLZLZH20,
-  author    = {Chunyuan Yuan and
-               Jiacheng Li and
+@inproceedings{DBLP:conf/dasfaa/WangWYBZZH22,
+  author    = {Ding Wang and
+               Lingwei Wei and
+               Chunyuan Yuan and
+               Yinan Bao and
                Wei Zhou and
-               Yijun Lu and
-               Xiaodan Zhang and
+               Xian Zhu and
                Songlin Hu},
-  title     = {DyHGCN: {A} Dynamic Heterogeneous Graph Convolutional Network to Learn
-               Users' Dynamic Preferences for Information Diffusion Prediction},
-  booktitle = {ECML-PKDD},
+  title     = {Cascade-Enhanced Graph Convolutional Network for Information Diffusion
+               Prediction},
+  booktitle = {Database Systems for Advanced Applications - 27th International Conference,
+               {DASFAA} 2022, Virtual Event, April 11-14, 2022, Proceedings, Part
+               {I}},
   series    = {Lecture Notes in Computer Science},
-  volume    = {12459},
-  pages     = {347--363},
+  volume    = {13245},
+  pages     = {615--631},
   publisher = {Springer},
-  year      = {2020},
-  url       = {https://doi.org/10.1007/978-3-030-67664-3\_21},
-  doi       = {10.1007/978-3-030-67664-3\_21}
+  year      = {2022},
+  url       = {https://doi.org/10.1007/978-3-031-00123-9\_50},
+  doi       = {10.1007/978-3-031-00123-9\_50},
+  timestamp = {Fri, 29 Apr 2022 14:50:40 +0200},
+  biburl    = {https://dblp.org/rec/conf/dasfaa/WangWYBZZH22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
 
